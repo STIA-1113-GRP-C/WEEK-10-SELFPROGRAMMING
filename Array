@@ -18,3 +18,10 @@ public class test_Array {
 	}
 
 }
+
+OUTPUT
+10
+20
+70
+40
+50
