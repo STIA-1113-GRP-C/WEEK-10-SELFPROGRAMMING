@@ -1,0 +1,36 @@
+package myArray;
+import java.util.Scanner;
+public class largest_element {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+	double[] sales = new double[5];
+		//double sales[] = {10.00,20.00,30.00,40.00,50.00};
+		int index, max_index;
+		double largest;
+		
+		max_index = 0;
+		System.out.println("Enter 5 array element :");
+		 for(int i = 0; i < sales.length;i++)
+	            sales[i] = sc.nextDouble();
+		for(index = 1; index<sales.length;index++)
+			if(sales[max_index] < sales[index])
+				max_index = index;
+		largest = sales[max_index];
+		
+		System.out.println("The biggest number is " + largest);
+
+	}
+
+}
+
+OUTPUT
+
+Enter 5 array element :
+2
+3
+4
+5
+6
+The biggest number is 6.0
