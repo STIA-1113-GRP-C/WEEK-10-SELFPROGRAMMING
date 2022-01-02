@@ -1,0 +1,43 @@
+package self_programming;
+import java.util.Scanner;
+public class Find_index {
+	public static int  findIndex (int[] my_array, int h) {
+        if (my_array == null) return -1;
+        int ten = my_array.length;
+        int i = 0;
+        while (i < ten) {
+            if (my_array[i] == h) return i;
+            else i++;
+        }
+        return -1;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		  int[] my_array = new int[7];
+		  System.out.println("Please enter 7 numbers : ");
+			
+			for(int j = 0; j < my_array.length; j++)
+				my_array [j] = sc.nextInt();
+		  System.out.println("Please enter one of the number that you enter before : ");
+		  int num = sc.nextInt();
+	      System.out.println("Index position of " + num +" is : " + findIndex(my_array, num));
+	      
+		
+
+	}
+
+}
+
+OUTPUT
+Please enter 7 numbers : 
+1
+2
+3
+4
+5
+6
+7
+Please enter one of the number that you enter before : 
+6
+Index position of 6 is : 5
