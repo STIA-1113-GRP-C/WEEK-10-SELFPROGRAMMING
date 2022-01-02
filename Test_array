@@ -1,0 +1,26 @@
+package self_programming;
+
+public class test_array {
+	 public static boolean contains(int[] ken, int pros) {
+	      for (int o : ken) {
+	         if (pros == o) {
+	            return true;
+	         }
+	      }
+	      return false;
+	   }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 int[] my_array = { 2222,3333,4444,5555,6666,7777,8888,9999,0000};
+		            
+		      System.out.println(contains(my_array, 6666));
+		      System.out.println(contains(my_array, 7777));
+		   }
+		
+
+	}
+
+OUTPUT
+true
+true
