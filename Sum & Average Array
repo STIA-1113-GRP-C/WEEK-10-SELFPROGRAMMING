@@ -1,0 +1,38 @@
+package self_programming;
+import java.util.Scanner;
+public class sum_average {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int sum = 0, i;
+		double average;
+		int[] number = new int[7];
+		
+		System.out.println("Please enter 7 numbers : ");
+		
+		for(int j = 0; j < number.length; j++)
+			number [j] = sc.nextInt();
+		
+		for (i = 0; i < number.length;i++)
+			sum = sum + number[i];
+		
+		average = sum / number.length;
+		
+		System.out.println("The total of number : " + sum);
+		System.out.println("The average : " + average);
+
+	}
+
+}
+OUTPUT
+Please enter 7 numbers : 
+1
+2
+3
+4
+5
+6
+7
+The total of number : 28
+The average : 4.0
